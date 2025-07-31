@@ -32,7 +32,7 @@ This Python script scans one or more web pages for [tabnabbing](https://owasp.or
 ### Scan a Single URL
 
 ```sh
-python tabnabbing_test.py https://example.com
+python3 tabnabbing_test.py https://example.com
 ```
 
 ### Scan Multiple URLs from a File
@@ -47,7 +47,7 @@ https://another-site.com
 Then run:
 
 ```sh
-python tabnabbing_test.py urls.txt
+python3 tabnabbing_test.py urls.txt
 ```
 
 ### Output to a File
@@ -56,7 +56,7 @@ Add the `-o` or `--output` argument to specify an output filename.
 Use `-d` or `--directory` to specify the output directory (default is current directory):
 
 ```sh
-python tabnabbing_test.py urls.txt -o results.txt -d ./reports
+python3 tabnabbing_test.py urls.txt -o results.txt -d ./reports
 ```
 
 ## Output
