@@ -12,10 +12,34 @@ This Python script scans one or more web pages for [tabnabbing](https://owasp.or
 - Outputs results to the terminal by default.
 - Optionally writes results to a file in a specified directory.
 
+## Colored Terminal Output
+
+This script uses [colorama](https://pypi.org/project/colorama/) to provide colored output in the terminal, making results easier to read:
+
+- **Cyan:** URL being checked
+- **Yellow:** Number of links checked
+- **Red:** Errors and tabnabbing risks found
+- **Magenta:** Details of each risky link
+- **Light gray:** HTML of the risky link
+- **Green:** Success message when no risks are found
+
+**Note:** Colors are only shown in the terminal. Output files are always plain text.
+
+### Additional Requirement
+
+To enable colored output, you need to install `colorama`:
+
+```sh
+pip install colorama
+```
+
+If `colorama` is not installed, the script will still run but without colored output.
+
 ## Requirements
 
 - Python 3.7+
 - [Playwright Python](https://playwright.dev/python/)
+- colorama (optional; for colorizing terminal output)
 
 ## Installation
 
